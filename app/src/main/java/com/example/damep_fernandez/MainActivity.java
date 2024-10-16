@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         // Inicializar los elementos de la UI
         documentoEditText = findViewById(R.id.documentoEditText);
         contrasenaEditText = findViewById(R.id.contrasenaEditText);
-        loginButton = findViewById(R.id.Ingresar);
-        createAccountButton = findViewById(R.id.CrearCuenta);
+        loginButton = findViewById(R.id.Ingresarbtn);
+        createAccountButton = findViewById(R.id.crearbtn);
 
 
         // Agregar TextWatchers para habilitar el botón cuando ambos campos están llenos
@@ -74,4 +74,6 @@ public class MainActivity extends AppCompatActivity {
         public void afterTextChanged(Editable s) {}
     };
 }
+
+
 

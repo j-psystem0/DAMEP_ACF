@@ -6,4 +6,11 @@
     <string name="Bienvenido">Bienvenido(a)</string>
     <string name="Ingresar">Ingresar</string>
     <string name="CrearCuenta">Crear cuenta</string>
+    <string name="Titulo">EsSalud\nMiConsulta</string>
+    <string name="textview_olvidocontra">¿Olvidaste tu contraseña?</string>
+    <string name="Bienvenidoo">Bienvenido(a)</string>
+    <string name="Ingresarr">Ingresar</string>
+    <string name="Crearcuenta">Crear Cuenta</string>
+    <string name="btnCallao">Consultas al 3500800 Opción 2 para Lima y Callao</string>
+    <string name="provinciabttn">Provincias a EsSalud en Linea de la Red de su región (http://www.essalud.gob.pe/essalud-en-linea)</string>
 </resources>
