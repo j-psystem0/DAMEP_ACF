@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">DAMEP_Fernandez</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Essalud">Essalud</string>
+    <string name="Essaludd">Essalud MiConsulta</string>
+    <string name="Bienvenido">Bienvenido(a)</string>
+    <string name="Ingresar">Ingresar</string>
+    <string name="CrearCuenta">Crear cuenta</string>
 </resources>

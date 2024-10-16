@@ -1,19 +1,167 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Contenedor del encabezado -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="Logo EsSalud" />
+
+
+        <!-- Título principal -->
+        <TextView
+            android:id="@+id/Essalud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/Essaludd"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <!-- CardView que contiene la sección del formulario -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:elevation="4dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <!-- Texto de bienvenida -->
+            <TextView
+                android:id="@+id/Bienvenido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:text="@string/Bienvenido"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <!-- Campo de Documento de identidad -->
+
+
+            <!-- Campo de Contraseña -->
+            <EditText
+                android:id="@+id/documentoEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+
+
+                android:hint="Documento de identidad"
+                android:inputType="@string/Nombre"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/contrasenaEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:padding="12dp" />
+
+
+            <!-- Botón de Ingresar (deshabilitado al inicio) -->
+            <Button
+                android:id="@+id/Ingresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:enabled="false"
+                android:text="@string/Ingresar"
+                android:textColor="@color/white" />
+
+
+            <!-- Enlace de Olvidar Contraseña -->
+
+
+            <!-- Enlace de Crear Cuenta -->
+            <TextView
+                android:id="@+id/noAccountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:text="¿Aún no tienes una cuenta EsSalud Mi Consulta?"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <!-- Botón Crear Cuenta -->
+            <Button
+                android:id="@+id/CrearCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="@string/CrearCuenta"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Contenedor para los botones de información de contacto -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <!-- Botón de consulta para Lima y Callao -->
+        <Button
+            android:id="@+id/limaCallaoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Consultas al 3500800 Opción 2 para Lima y Callao"
+            android:textColor="@color/white" />
+
+
+        <!-- Botón de consulta para provincias -->
+        <Button
+            android:id="@+id/provinciasButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Provincias a EsSalud en Linea de la Red de su región (http://www.essalud.gob.pe/essalud-en -linea)"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>
